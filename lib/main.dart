@@ -1,5 +1,8 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
+//import 'package:english_words/english_words.dart';
+import 'package:audiofileplayer/audiofileplayer.dart';
 
 void main() => runApp(XylophoneApp());
 
@@ -11,7 +14,16 @@ class XylophoneApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Center(child: Text(nouns.first)),
+          child: Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Audio.load('assets/note1.wav')
+                  ..play()
+                  ..dispose();
+              },
+              child: Text('play'),
+            ),
+          ),
         ),
       ),
     );
