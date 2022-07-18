@@ -14,15 +14,72 @@ class XylophoneApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Center(
-            child: ElevatedButton(
-              onPressed: () {
-                Audio.load('assets/note1.wav')
-                  ..play()
-                  ..dispose();
-              },
-              child: Text('play'),
-            ),
+          child: Column(
+            children: [
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(primary: Colors.red),
+                onPressed: () {
+                  Audio.load('assets/note1.wav')
+                    ..play()
+                    ..dispose();
+                },
+                child: Text(''),
+              ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(primary: Colors.orange),
+                onPressed: () {
+                  Audio.load('assets/note2.wav')
+                    ..play()
+                    ..dispose();
+                },
+                child: Text(''),
+              ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(primary: Colors.yellow),
+                onPressed: () {
+                  Audio.load('assets/note3.wav')
+                    ..play()
+                    ..dispose();
+                },
+                child: Text(''),
+              ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(primary: Colors.teal),
+                onPressed: () {
+                  Audio.load('assets/note4.wav')
+                    ..play()
+                    ..dispose();
+                },
+                child: Text(''),
+              ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(primary: Colors.blue),
+                onPressed: () {
+                  Audio.load('assets/note5.wav')
+                    ..play()
+                    ..dispose();
+                },
+                child: Text(''),
+              ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(primary: Colors.purple),
+                onPressed: () {
+                  Audio.load('assets/note6.wav')
+                    ..play()
+                    ..dispose();
+                },
+                child: Text(''),
+              ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(primary: Colors.green),
+                onPressed: () {
+                  Audio.load('assets/note7.wav')
+                    ..play()
+                    ..dispose();
+                },
+                child: Text(''),
+              ),
+            ],
           ),
         ),
       ),
