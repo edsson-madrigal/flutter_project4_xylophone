@@ -19,57 +19,73 @@ class XylophoneApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.red),
-                onPressed: () {
-                  playSound(1);
-                },
-                child: Text(''),
+              Expanded(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(primary: Colors.red),
+                  onPressed: () {
+                    playSound(1);
+                  },
+                  child: Text(''),
+                ),
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.orange),
-                onPressed: () {
-                  playSound(2);
-                },
-                child: Text(''),
+              Expanded(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(primary: Colors.orange),
+                  onPressed: () {
+                    playSound(2);
+                  },
+                  child: Text(''),
+                ),
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.yellow),
-                onPressed: () {
-                  playSound(3);
-                },
-                child: Text(''),
+              Expanded(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(primary: Colors.yellow),
+                  onPressed: () {
+                    playSound(3);
+                  },
+                  child: Text(''),
+                ),
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.teal),
-                onPressed: () {
-                  playSound(4);
-                },
-                child: Text(''),
+              Expanded(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(primary: Colors.teal),
+                  onPressed: () {
+                    playSound(4);
+                  },
+                  child: Text(''),
+                ),
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.blue),
-                onPressed: () {
-                  playSound(5);
-                },
-                child: Text(''),
+              Expanded(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(primary: Colors.blue),
+                  onPressed: () {
+                    playSound(5);
+                  },
+                  child: Text(''),
+                ),
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.purple),
-                onPressed: () {
-                  playSound(6);
-                },
-                child: Text(''),
+              Expanded(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(primary: Colors.purple),
+                  onPressed: () {
+                    playSound(6);
+                  },
+                  child: Text(''),
+                ),
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.green),
-                onPressed: () {
-                  playSound(7);
-                },
-                child: Text(''),
+              Expanded(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(primary: Colors.green),
+                  onPressed: () {
+                    playSound(7);
+                  },
+                  child: Text(''),
+                ),
               ),
             ],
           ),
